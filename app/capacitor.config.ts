@@ -2,19 +2,19 @@ import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.familleleguay.deficittracker',
-  appName: 'Déficit Tracker',
-  webDir: 'dist',
-  backgroundColor: '#0a0d12',
+  appName: 'La Course du Poids',
+  webDir: 'www',
+  backgroundColor: '#F7F3E8',
   plugins: {
     SplashScreen: {
       launchShowDuration: 700,
-      backgroundColor: '#0a0d12',
+      backgroundColor: '#0E1A14',
       androidSplashResourceName: 'splash',
       showSpinner: false,
     },
     StatusBar: {
       style: 'DARK',
-      backgroundColor: '#0a0d12',
+      backgroundColor: '#F7F3E8',
     },
   },
 };
