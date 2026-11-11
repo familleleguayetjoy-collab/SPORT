@@ -35,6 +35,11 @@ jobs:
           java-version: '21'
 
       - uses: android-actions/setup-android@v3
+        with:
+          # Google removed the legacy "tools" package from the SDK repository;
+          # the action's default package list still requests it and fails.
+          # Gradle auto-downloads the platform/build-tools it needs.
+          packages: "platform-tools"
 
       - name: Sync Capacitor Android project
         run: npx cap sync android
